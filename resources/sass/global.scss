@@ -1,0 +1,32 @@
+.text-right {
+    text-align: right;
+}
+.text-link {
+    color: $theme;
+
+    &:hover {
+        color: $theme-light;
+    }
+}
+
+// font colors
+.color-grey2 {
+    color: $grey2;
+}
+.color-grey4 {
+    color: $grey4;
+}
+.color-danger {
+    color: $danger;
+}
+.color-white {
+    color: white;
+}
+.color-theme {
+    color: $theme;
+}
+
+// background colors
+.background-hover-theme-faint:hover {
+    background-color: $theme-faint;
+}

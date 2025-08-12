@@ -1,0 +1,30 @@
+#item {
+    .value-row-initial:hover {
+        cursor: pointer;
+        background-color: $theme-faint;
+    }
+
+    .value-button {
+        width: 5rem;
+    }
+
+    .title-buttons a {
+        display: inline-block;
+    }
+
+    .form-check-input {
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .color-active {
+        color: $success;
+    }
+    .color-inactive {
+        color: $danger;
+    }
+
+    .share_quantity_input {
+        width: 5rem;
+    }
+}

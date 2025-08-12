@@ -1,0 +1,17 @@
+@each $name, $color in $item-colors {
+    .color-#{$name} {
+        color: $color;
+    }
+    .background-color-#{$name} {
+        background-color: $color;
+    }
+    .color-hover-#{$name}:hover {
+        color: $color;
+    }
+}
+
+@each $name, $color in $item-faint-colors {
+    .background-color-faint-#{$name} {
+        background-color: $color;
+    }
+}

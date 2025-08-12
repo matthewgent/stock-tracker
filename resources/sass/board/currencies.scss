@@ -1,0 +1,24 @@
+#currencies {
+    .exchange-rate-row:nth-child(even) {
+        background-color: $theme-faint;
+    }
+
+    .rate-amount {
+        text-align: right;
+    }
+
+    .input-group-text {
+        border-radius: 0.25rem 0 0 0.25rem;
+        background-color: $theme;
+        color: white;
+    }
+
+    .input-group {
+        width: 9rem;
+        display: inline-flex;
+    }
+
+    select {
+        display: inline-block;
+    }
+}

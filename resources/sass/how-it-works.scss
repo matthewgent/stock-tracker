@@ -1,0 +1,47 @@
+#how-it-works {
+    color: $theme-faint;
+    font-size: 1.25rem;
+    text-align: center;
+
+    .row > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .row:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    &> .row:not(:first-child) {
+        margin-top: 3rem;
+    }
+
+    .screenshot {
+        text-align: center;
+        margin-top: 3rem;
+        img {
+            max-height: 20rem;
+            max-width: 100%;
+        }
+    }
+
+    .number {
+        font-size: 4rem;
+        line-height: 4rem;
+        margin-bottom: 1rem;
+        color: $theme;
+    }
+
+    @include media-breakpoint-up(lg) {
+        text-align: left;
+
+        .screenshot {
+            margin-top: 0;
+        }
+
+        .row:nth-child(even) {
+            text-align: right;
+        }
+    }
+}

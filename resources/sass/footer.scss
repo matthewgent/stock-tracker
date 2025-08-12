@@ -1,0 +1,17 @@
+#footer {
+    width: 100%;
+    height: 3rem;
+    position: fixed;
+    bottom: 0;
+    background-color: $background;
+    border-top: 1px solid $theme;
+
+    #footer-col > * {
+        margin-left: 0.3rem;
+        margin-right: 0.3rem;
+        color: $theme;
+    }
+    #footer-col > a:hover {
+        color: $theme-faint;
+    }
+}

@@ -1,0 +1,18 @@
+#wealth {
+    .wealth-change-statistic {
+        display: flex;
+        align-items: center;
+
+        span:last-child {
+            margin-left: 0.5rem;
+            font-size: 0.8rem;
+        }
+    }
+
+    .wealth-change-information {
+        margin-top: 0.5rem;
+        font-size: 0.7rem;
+        line-height: 0.9rem;
+        color: $grey4;
+    }
+}

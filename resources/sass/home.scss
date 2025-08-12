@@ -1,0 +1,59 @@
+#home {
+    #background {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        background: url('/images/mountain.jpg') no-repeat center center fixed;
+        background-size: cover;
+        opacity: 1;
+    }
+
+    #title {
+        font-size: 4rem;
+        line-height: 4rem;
+        color: $background;
+    }
+    #subtitle {
+        font-size: 2rem;
+        color: $background;
+    }
+
+    .spacer {
+        margin-top: 6rem;
+    }
+
+    .faded_box {
+        font-size: 1.2rem;
+        border-radius: 0.5rem;
+        padding: 1.5rem;
+    }
+    .faded_box_black {
+        @extend .faded_box;
+        color: $grey0;
+        background-color: #303030d0;
+    }
+    .faded_box_theme {
+        @extend .faded_box;
+        color: $background;
+        background-color: rgba($theme, 0.6);
+    }
+
+    .action-buttons a {
+        display: block;
+        font-size: 1.2rem;
+        padding: 0.4rem 2rem;
+    }
+
+    .tile_icon {
+        font-size: 5rem;
+        color: $theme;
+        margin-bottom: 1rem;
+    }
+
+    .screenshot-image {
+        max-width: 100%;
+    }
+}

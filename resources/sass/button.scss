@@ -1,0 +1,97 @@
+.button {
+    padding: 0.3rem 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    text-align: center;
+    border: none;
+}
+.button:hover {
+    cursor: pointer;
+}
+
+input:disabled.button, input:disabled + label.button {
+    background: $grey2;
+
+    &:hover {
+        cursor: default;
+    }
+}
+
+.button-disabled {
+    @extend .button;
+    background: $grey2;
+    color: $grey5;
+    &:hover {
+        cursor: default;
+    }
+}
+
+.button-primary {
+    @extend .button;
+    background: linear-gradient(to bottom, $theme-light 30%, $theme 70%, $theme);
+    color: $background;
+}
+.button-primary:hover,
+.button-primary:active,
+.button-primary:checked,
+.btn-check:checked+label.button-primary
+{
+    background: $theme;
+    color: $background;
+}
+
+.button-grey {
+    @extend .button;
+    background: linear-gradient(to bottom, $grey2 30%, $grey3 70%, $grey3);
+    color: black;
+
+    &:hover {
+        background: $grey3;
+        color: black;
+    }
+}
+
+.button-background {
+    @extend .button;
+    background: linear-gradient(to bottom, $grey6 30%, $background 70%, $background);
+    color: $theme;
+
+    &:hover {
+        background: $background;
+        color: $theme;
+    }
+}
+
+.button-success {
+    @extend .button;
+    background: linear-gradient(to bottom, $success-light 30%, $success 70%, $success);
+    color: black;
+
+    &:hover {
+        color: black;
+        background: $success;
+    }
+}
+
+.button-danger {
+    @extend .button;
+    background: linear-gradient(to bottom, $danger-light 30%, $danger 70%, $danger);
+    color: white;
+
+    &:hover {
+        color: white;
+        background: $danger;
+    }
+}
+
+.button-gold {
+    @extend .button;
+    background: linear-gradient(to bottom, #ffda54 30%, #ffc800 70%, #ffc800);
+    color: black;
+
+    &:hover {
+        color: black;
+        background: #ffc800;
+    }
+}

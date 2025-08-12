@@ -1,0 +1,94 @@
+// Theme colors
+$theme: #e1b284;
+$theme-light: #edceaf;
+$theme-faint: #faf1e8;
+
+$theme-colors: (
+    "primary": $theme,
+);
+
+// Colors
+$success: #27ab29;
+$success-light: #4bbf4c;
+$danger: #e02d2d;
+$danger-light: #e34f4f;
+
+// Greys
+$grey0: #f9f9f9;
+$grey1: #e0e0e0;
+$grey2: #c0c0c0;
+$grey3: #a0a0a0;
+$grey4: #808080;
+$grey5: #606060;
+$grey6: #404040;
+$grey7: #303030;
+
+// Background
+$background: $grey7;
+$body-bg: $background;
+
+// Messages
+$success-background: #d4edda;
+$success-text: #155724;
+$success-border: #c3e6cb;
+
+$danger-background: #f8d7da;
+$danger-text: #721c24;
+$danger-border: #f5c6cb;
+
+$item-colors: (
+    'bankAccount': #2a7a3e,
+    'bond': #28acbd,
+    'car': #bd2828,
+    'cash': #7ac240,
+    'commodity': #bdbd28,
+    'creditCard': #bd2828,
+    'cryptoCurrency': #cf8f23,
+    'loan': #bdbd28,
+    'mortgage': #874c1f,
+    'other': #7c28bd,
+    'pension': #b328bd,
+    'property': #874c1f,
+    'stock': #2843bd,
+    'tax': #b328bd,
+);
+
+$item-faint-colors: (
+    'bankAccount': #e8ffee,
+    'bond': #e8fcff,
+    'car': #ffe8e8,
+    'cash': #f2ffe8,
+    'commodity': #fcfce6,
+    'creditCard': #ffe8e8,
+    'cryptoCurrency': #fff6e6,
+    'loan': #ffffe6,
+    'mortgage': #fff1e6,
+    'other': #f4e6ff,
+    'pension': #fde6ff,
+    'property': #fff1e6,
+    'stock': #e6eaff,
+    'tax': #fde6ff,
+);
+
+// Typography
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// Colors
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+
+// Overrides
+$input-bg: $theme-faint;
+$input-color: $background;
+$input-border-color: $theme;
+$component-active-bg: $theme;
+$form-range-thumb-active-bg: $theme-light;

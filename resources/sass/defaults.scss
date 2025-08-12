@@ -1,0 +1,43 @@
+html {
+    font-size: 1.1rem;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    color: $background;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+a:hover {
+    cursor: pointer;
+    color: initial;
+}
+
+p {
+    margin: 0;
+    line-height: 1.3em;
+}
+
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.3rem; }
+h3 { font-size: 1.1rem; }
+h4 { font-size: 0.85rem; }
+h5 { font-size: 0.75rem; }
+h6 { font-size: 0.65rem; }
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0;
+}
+
+.input-group-append {
+    &> .input-group-text {
+        border-radius: 0 0.25rem 0.25rem 0;
+    }
+
+    &> button {
+        border-radius: 0 0.25rem 0.25rem 0;
+    }
+}

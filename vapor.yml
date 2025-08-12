@@ -1,0 +1,25 @@
+id: 28049
+name: bronzemountain
+environments:
+    production:
+        domain: bronzemountain.com
+        database: bronze_mountain
+        timeout: 300
+        memory: 1024
+        cli-memory: 512
+        runtime: php-8.0:al2
+        build:
+            - 'COMPOSER_MIRROR_PATH_REPOS=1 composer install --no-dev'
+            - 'php artisan event:cache'
+            - 'npm ci && npm run prod && rm -rf node_modules'
+        deploy:
+            - 'php artisan migrate --force'
+    staging:
+        domain: staging.bronzemountain.com
+        memory: 1024
+        cli-memory: 512
+        runtime: php-8.0:al2
+        build:
+            - 'COMPOSER_MIRROR_PATH_REPOS=1 composer install'
+            - 'php artisan event:cache'
+            - 'npm ci && npm run dev && rm -rf node_modules'

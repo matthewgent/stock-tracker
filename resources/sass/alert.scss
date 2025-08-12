@@ -1,0 +1,17 @@
+.alert {
+    margin-bottom: 0;
+    border-left-width: 10px;
+    padding: 0.6rem 1rem;
+}
+
+.alert-success {
+    background-color: $success-background;
+    color: $success-text;
+    border-color: $success-border;
+}
+
+.alert-danger {
+    background-color: $danger-background;
+    color: $danger-text;
+    border-color: $danger-border;
+}

@@ -1,0 +1,59 @@
+#plan {
+    .title {
+        font-size: 2.4rem;
+        color: $theme;
+        text-align: center;
+    }
+
+    .options {
+        margin-top: 1rem;
+        justify-content: center;
+    }
+
+    .option {
+        padding: 1rem;
+        text-align: center;
+        border-radius: 0.5rem;
+
+        .description {
+            margin-top: 0.5rem;
+            line-height: 1.2rem;
+        }
+
+        .price {
+            margin-top: 1.5rem;
+            font-size: 2rem;
+            line-height: 2.5rem;
+        }
+
+        .per-year {
+            font-size: 1rem;
+            line-height: 1rem;
+            min-height: 1rem;
+        }
+
+        .action {
+            margin-top: 1rem;
+            min-height: 3rem;
+            font-size: 1.2rem;
+
+            .owned:hover {
+                cursor: default;
+            }
+
+            * {
+                display: block;
+            }
+        }
+    }
+    .option-basic {
+        @extend .option;
+        background-color: $grey0;
+        color: $background;
+    }
+    .option-premium {
+        @extend .option;
+        background-color: $theme;
+        color: $background;
+    }
+}

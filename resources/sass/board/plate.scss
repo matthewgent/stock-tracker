@@ -1,0 +1,69 @@
+$plate-padding: 0.9rem;
+
+.plate {
+    height: 100%;
+    background-color: $grey0;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.2rem 0.7rem 0 $grey4;
+    color: $grey6;
+
+    &-padding {
+        padding: $plate-padding;
+    }
+    &-padding-x {
+        padding-left: $plate-padding;
+        padding-right: $plate-padding;
+    }
+
+    &-spacer {
+        padding-top: $plate-padding;
+        width: 100%;
+    }
+
+    &-title {
+        color: $grey4;
+        font-size: 1.05rem;
+    }
+
+    &-statistic {
+        font-size: 1.5rem;
+        color: $theme;
+    }
+
+    &-link {
+        color: $theme;
+
+        &:hover {
+            color: $theme-light;
+        }
+    }
+
+    &-item-icon {
+        text-align: center;
+        font-size: 1.4rem;
+        width: 2rem;
+        margin-right: 0.5rem;
+    }
+
+    &-header {
+        padding: $plate-padding;
+    }
+    &-footer {
+        padding: $plate-padding;
+
+        &:empty {
+            display: none;
+        }
+    }
+
+    &-header > *, &-footer > * {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .input-group-text {
+        background-color: $theme;
+        color: white;
+    }
+}

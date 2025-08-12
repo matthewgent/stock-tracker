@@ -1,0 +1,33 @@
+.spinner, .spinner:after {
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+}
+.spinner {
+    position: relative;
+    border-top: 0.5rem solid $theme-faint;
+    border-right: 0.5rem solid $theme-faint;
+    border-bottom: 0.5rem solid $theme-faint;
+    border-left: 0.5rem solid $theme;
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-animation: spinnerAnimation 1s infinite linear;
+    animation: spinnerAnimation 1s infinite linear;
+}
+@-webkit-keyframes spinnerAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes spinnerAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
